@@ -1,0 +1,26 @@
+
+  
+  /*@media (max-width: 1536px ) {}*/
+  /*@media (max-width: 1280px ) {}*/
+  /*@media (max-width: 1024px ) {}*/
+  /*@media (max-width: 768px ) {}*/
+  /*@media (max-width: 640px ) {}*/
+  /*@media (max-width: 475px ) {}*/
+
+  .videosection {
+    width: 100%; /* Full width of the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+  }
+  
+  .video-player {
+    width: 100%; /* Automatically adjust to the width of the screen */
+    height: auto; /* Maintain the aspect ratio */
+    transform: scale(1); /* Slight zoom out */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }

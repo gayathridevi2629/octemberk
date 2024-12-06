@@ -1,0 +1,111 @@
+/* Main testimonial container */
+.contenter{
+    min-height: 100vh;
+    width: auto;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: #011c3a;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.happy{
+    color: #ffff;
+    font-size: 3rem;
+    padding-top:2%;
+    text-align: center;
+    font-family: Caveat, sans-serif;
+}
+
+.testimonial {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive columns */
+    grid-gap: 18px;
+    padding: 10px;
+    background-color: #011c3a;
+}
+
+
+/* Individual testimonial boxes */
+.testimonial-box {
+    background-color: #011c3a;
+    width: auto; /* Adjust width to content */
+    height: auto; /* Adjust height to content */
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto; /* Center alignment with auto margins */
+}
+
+
+.Topcontent{
+    display:block;
+    flex-direction: row;
+    
+  
+}
+.conte h1{
+   margin-right: -15%;
+   
+}
+.Topcontent h1{
+    font-size: 24px;
+    letter-spacing: .4px;
+    margin-top: 8%;
+    margin-left: 3px;
+}
+
+.googleicon {
+    width: 36px;
+    height: auto;
+    object-fit: contain;
+    margin-left:50%;
+    margin-right: 50%;
+   
+}
+.imgtwo{
+    display: flex;
+    flex-direction: row;
+
+}
+.testimg {
+    width:auto;
+    height:110px;
+    object-fit: cover;
+    border-radius: 50%; /* Optional: if you want circular images */
+
+}
+
+.starimg {
+    width: 120px;
+    height: 120px;
+    object-fit: contain; 
+    margin-top: -28%;
+    margin-left: 23%;
+}
+
+
+.headings{
+    margin-top:3%;
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+    font-family: Caveat, sans-serif;
+}
+
+.headings h1{
+    font-family:arvoc;
+}
+.testcontent{
+    margin-top: 19px;
+    font-size: 18.99px;
+    color:rgb(121, 138, 153);
+    letter-spacing: .1px;
+    font-weight: 400;
+}
+

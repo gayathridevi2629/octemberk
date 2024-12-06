@@ -1,0 +1,14 @@
+
+.logos{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.logoimg{
+  height: 4rem;
+  width: 4rem;
+  margin-top: -13px;
+  padding: 0;
+  margin-right: 1.5px;
+}

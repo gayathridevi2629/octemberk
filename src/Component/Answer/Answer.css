@@ -1,0 +1,352 @@
+/* General styles */
+.answer {
+  background-image: url("../../assets/bluebac.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  min-height: 120vh; /* Allow background section to expand based on content */
+}
+
+.topbox {
+  height: auto;
+  width: calc(
+    100% - 6rem
+  ); /* Subtracting the total margin for left and right (3rem each) */
+  margin: auto;
+  box-shadow: 1px 3px 7px 6px #a6e2f8;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* Ensures image and content are vertically aligned */
+  flex-wrap: nowrap; /* Keeps content and image adjacent */
+}
+
+.imgbox {
+  width: 40%; /* Image takes 40% of the width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgbox img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.contentbox {
+  width: 60%; /* Content takes 60% of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tier {
+  height: auto;
+  width: 90%;
+  margin: 1rem;
+}
+
+.q {
+  color: #fff;
+  height: auto;
+  margin: 1rem;
+  font-size: 2rem;
+}
+
+.ans {
+  color: #fff;
+  margin: 1rem;
+}
+
+.ans p {
+  margin-bottom: 8%;
+}
+
+@media screen and (max-width: 1280px) and (min-width: 1280px) {
+    .topbox {
+        width: calc(100% - 4rem);
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: row; /* Maintain row layout */
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Reversing the order of the content and image for 1280px screens */
+    .imgbox {
+        order: -1; /* Image appears first */
+        width: 45%;
+        padding: 1rem;
+    }
+
+    .contentbox {
+        order: 1; /* Content appears second */
+        width: 50%; /* Adjust content width for smaller screens */
+        padding: 1rem;
+        margin: 0 auto;
+    }
+
+    .imgbox img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .q {
+        font-size: 2.4rem; /* Reduced font size for better readability */
+        font-weight: 500;
+        line-height: 2.6rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    
+    }
+    
+      .ans {
+        font-size: 1.5rem; /* Adjusting answer text size */
+        
+    }
+    
+      .tier {
+        width: 100%; /* Full-width tier on smaller screens */
+        margin-bottom:0.5rem ;
+}
+}
+
+/* Responsive Styles for 1024px only */
+@media screen and (max-width: 1024px) and (min-width: 1024px) {
+  .topbox {
+    width: calc(100% - 4rem);
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: row; /* Maintain row layout */
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Reversing the order of the content and image for 1024px screens */
+  .imgbox {
+    order: -1; /* Image appears first */
+    width: 45%;
+    padding: 1rem;
+  }
+
+  .contentbox {
+    order: 1; /* Content appears second */
+    width: 50%; /* Adjust content width for smaller screens */
+    padding: 1rem;
+    margin: 0 auto;
+  }
+
+  .imgbox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .q {
+    font-size: 2rem; /* Reduced font size for better readability */
+    font-weight: 500;
+    line-height: 2.6rem;
+
+}
+
+  .ans {
+    font-size: 1.3rem; /* Adjusting answer text size */
+    
+}
+
+  .tier {
+    width: 100%; /* Full-width tier on smaller screens */
+    margin-bottom:0.1rem ;
+  }
+}
+
+/*crrted*/
+@media screen and (max-width: 912px) {
+  .answer {
+    min-height: 100vh;
+  }
+
+  .topbox {
+    width: calc(100% - 3rem); /* Reducing margin for responsiveness */
+    flex-direction: column; /* Stacking the content vertically */
+    align-items: center;
+    margin: 2rem auto;
+  }
+
+  .imgbox {
+    width: 80%; /* Adjusting image box width for better fit */
+    margin-bottom: 2rem;
+  }
+
+  .imgbox img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensuring the image covers the container */
+  }
+
+  .contentbox {
+    width: 100%;
+    margin-bottom: 2rem; /* Adding space between the image and content */
+    padding: 0 1rem;
+  }
+
+  .q {
+    font-size: 1.8rem; /* Adjusted font size for 1024px */
+  }
+
+  .ans {
+    font-size: 1.2rem; /* Adjusting text size */
+  }
+
+  .tier {
+    width: 100%;
+    margin: 1rem 0; /* Ensuring full-width on 1024px */
+  }
+  .tier .q {
+    font-size: 2.5rem;
+  }
+  .tier .ans {
+    font-size: 1.4rem;
+  }
+}
+
+/*crrted*/
+@media screen and (max-width: 820px) {
+  .topbox {
+    width: calc(
+      100% - 4rem
+    ); /* Subtracting the total margin for left and right (3rem each) */
+    margin: 4rem auto;
+  }
+  .tier {
+    margin: auto;
+  }
+  .tier .q {
+    font-size: 2.2rem;
+  }
+  .tier .ans {
+    font-size: 1.4rem;
+  }
+}
+
+/* not crrted */
+@media screen and (max-width: 768px) {
+  .topbox {
+    width: calc(
+      100% - 4rem
+    ); /* Subtracting the total margin for left and right (3rem each) */
+    margin: 4rem auto;
+  }
+  .tier {
+    margin: auto;
+  }
+  .tier .q {
+    font-size: 1.8rem;
+  }
+  .tier .ans {
+    font-size: 1.2rem;
+  }
+}
+
+/*crrtced*/
+@media screen and (max-width: 540px) {
+  .topbox {
+    width: calc(
+      100% - 2rem
+    ); /* Subtracting the total margin for left and right (3rem each) */
+    margin: 4rem auto;
+  }
+  .tier {
+    margin: auto;
+  }
+  .tier .q {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+  }
+  .tier .ans {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+/*all below are crrted*/
+@media screen and (max-width: 430px) {
+  .topbox {
+    width: calc(
+      100% - 2rem
+    ); /* Subtracting the total margin for left and right (3rem each) */
+    margin: 4rem auto;
+  }
+  .tier {
+    margin: auto;
+  }
+  .tier .q {
+    font-size: 1.8rem;
+  }
+  .tier .ans {
+    font-size: 1.2rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .topbox {
+    width: calc(
+      100% - 2rem
+    ); /* Subtracting the total margin for left and right (3rem each) */
+    margin: 5rem auto;
+  }
+  .tier {
+    margin: auto;
+  }
+  .tier .q {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+  }
+  .tier .ans {
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .topbox {
+    width: calc(
+      100% - 1.1rem
+    ); /* Subtracting the total margin for left and right (3rem each) */
+    margin: 5rem auto;
+  }
+  .tier {
+    margin: auto;
+  }
+  .tier .q {
+    font-size: 1.6rem;
+    margin-top: 0.5rem;
+  }
+  .tier .ans {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .topbox {
+    margin: 3rem auto;
+  }
+  .tier {
+    margin: auto;
+  }
+  .tier .q {
+    font-size: 1.4rem;
+  }
+  .tier .ans {
+    font-size: 1rem;
+  }
+}

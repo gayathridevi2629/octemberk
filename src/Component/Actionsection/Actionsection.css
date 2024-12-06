@@ -1,0 +1,107 @@
+.actionsection {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #001c3a;
+    min-height: 94vh; /* Allow the section to grow dynamically */
+}
+.actu{
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 45px;
+    min-height: 60vh; /* Allow container height to adjust based on content */
+   margin-bottom: .6rem;
+}
+
+.card {
+    max-width: 400px; /* Maintain minimum width for larger screens */
+    min-height: 300px; /* Default height for larger screens */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px #a6e2f8;
+    margin: 20px;
+    border: 2px solid #a6e2f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card h1 {
+    color: #fff;
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.card p{
+    color: rgb(121, 138, 153);
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.teleicon {
+    height: 3.4rem; 
+    margin-top: 1.8rem;
+    margin-bottom: 19px;
+
+}
+
+.bulb, .graph {
+    height:4.6rem; 
+    margin-top: 1.5rem;
+}
+
+/* For large screens (desktops) */
+@media screen and (min-width: 1024px) {
+    .card {
+        width: 30%; /* Shrinks cards slightly for larger screens */
+    }
+}
+
+/* For tablets and smaller laptops */
+@media screen and (max-width: 1024px) {
+    .card {
+        width: 45%; /* Cards take up more space */
+    }
+}
+
+/* For mobile devices */
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%; /* Full width for small screens */
+        min-height: 350px; /* Reduced height for small screens */
+    }
+
+    .teleicon {
+        height: 4rem; /* Reduced icon size */
+    }
+
+    .bulb, .graph {
+        height: 6rem; /* Reduced icon size */
+    }
+  
+}
+
+/* For very small devices (e.g., portrait mode smartphones) */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%; /* Cards will stack and take full width */
+        height: auto; /* Let the height adjust based on content */
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .card {
+        width: 80%; /* Cards will stack and take full width */
+        height: auto; /* Let the height adjust based on content */
+    }
+}

@@ -1,0 +1,45 @@
+
+.tcbox{
+    box-sizing: border-box;
+    margin: 1rem ;  
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1rem;
+    margin-top: 3rem;
+}
+
+.termheading .tms{
+    font-size: 2rem;
+    font-weight: 600;
+  
+}
+.termheading h1{
+    font-size: .7rem;
+    font-weight: 400;
+
+}
+.termheading p{
+    font-size: 18px;
+    padding-top: 15px;
+    font-weight: 400;
+}
+.termsandconditions{
+    padding-top: 18px;
+}
+.term{
+    font-size: larger;
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom:16px;
+}
+.condition{
+    padding-bottom: 10px;
+}
+.condition ul li{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.condition .boldhead{
+    font-weight: 500;
+    font-size: bold;
+}

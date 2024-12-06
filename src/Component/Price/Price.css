@@ -1,0 +1,245 @@
+.price{
+  width: 100%;
+  height: auto;
+  margin-bottom: 3.3rem;
+}
+.pricetopheading {
+  font-size: 2rem;
+
+  text-align: center;
+
+}
+.pricepicimg{
+  height:350px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+.boxthree{
+  background-color: #b0b3f0;
+}
+.pricingheading {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.pricingheading{
+  font-size: 1.4rem;
+  margin-top: 22px;
+  margin-bottom: 12px;
+}
+.spanss{
+  font-weight: 700;
+  font-size: 1.12rem;
+}
+.pricebox {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 18px;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin-right: 2%;
+}
+.boxone {
+  border: 1px solid blue;
+ border-radius: 13px;
+  width: 100%;
+  height: auto;
+}
+.websitename {
+  height: 4rem;
+  background: linear-gradient(to right, #fa5b1d, #f88628, #f88628, #f7b80c);
+  border: 1px solid peru;
+  border-radius: 13px;
+  text-align: center;
+  margin-top: 13px;
+  padding: 10px 2px;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 8%;
+}
+.boxsix{
+ 
+}
+.websitename h1 {
+  font-size: 1.5rem;
+  margin: auto;
+  justify-content: center;
+  font-family: Archivo, sans-serif;
+}
+.amount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+.oldamount {
+  text-decoration: line-through;
+  font-size: 25.6px;
+  font-weight: 500;
+  font-family: Archivo, sans-serif;
+  line-height: 25.6px;
+}
+.newamount {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: Archivo, sans-serif;
+  color: rgb(21, 26, 178);
+  margin-bottom: 15px;
+}
+.gst {
+  font-size: 15.6px;
+  font-weight: 600;
+  font-family: Archivo, sans-serif;
+  color: rgb(26, 26, 26);
+}
+.Featureheading{
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Archivo, sans-serif;
+    text-align: center;
+    margin-bottom: 1.7rem;
+}
+.ulli{
+    line-height: 3.4rem;
+    font-weight: 500;
+    font-size: 19px;
+    font-family: Archivo, sans-serif;
+    margin-left: 14px;
+}
+.icontic{
+  font-size:1.8rem;
+  margin-top: .8rem;
+}
+.cmmt{
+  display: flex;
+  gap: 16px;
+}
+.ctnow{
+  background-color: #ff7c02;
+  color: #000000;
+  font-size: 1.3rem;
+  border: 1px solid #bd7b10;
+  border-radius: 4px;
+  padding: 7px 9px;
+  margin-top: 1.4rem;
+  margin-bottom: 5%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 35%;
+  margin-right: 20%;
+}
+
+@media (min-width: 880px) {
+  .pricebox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 boxes per row */
+    grid-gap: 20px;
+  }
+  .pricepicimg{
+    height:280px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    
+  }
+  .pricetopheading {
+    font-size: 1.6rem;
+    margin-top: 22px;
+  }
+  .boxone {
+    width: auto; /* Adjust width based on grid column */
+    height: auto;
+  }
+.boxsix{
+  height: auto;
+}
+
+  .websitename h1 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 7px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 7px;
+    font-family: Archivo, sans-serif;
+  }
+  .boxsix h1{
+    margin-top: -9px;
+    margin-bottom: -9px;
+  }
+  .amount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.2rem;
+  }
+  .oldamount {
+    text-decoration: line-through;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Archivo, sans-serif;
+    line-height: 25.6px;
+  }
+  .newamount {
+    font-size: 30.6px;
+    font-weight: 600;
+    font-family: Archivo, sans-serif;
+    color: rgb(21, 26, 178);
+    margin-bottom: 15px;
+  }
+  .gst {
+    font-size: 13.9px;
+    font-weight: 600;
+    font-family: Archivo, sans-serif;
+    color: rgb(26, 26, 26);
+  }
+  .Featureheading{
+      line-height: 18px;
+      font-size: 18px;
+      font-weight: 600;
+      font-family: Archivo, sans-serif;
+      text-align: center;
+      margin-bottom: 1.5rem;
+  }
+  .ulli{
+      line-height: 2.4rem;
+      font-weight: 500;
+      font-size: 17px;
+      font-family: Archivo, sans-serif;
+      margin-left: 10px;
+      margin-right: 4px;
+  }
+  .icontic{
+    font-size:1.4rem;
+    margin-top: .5rem;
+  }
+  .cmmt{
+    gap: 14px;
+  }
+  .ctnow{
+    font-size: 1rem;
+    border-radius: 4px;
+    padding: 5px 9px;
+    margin-top: 1.7rem;
+    margin-bottom: 5%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 35%;
+    margin-right: 20%;
+  }
+}
+
+/* For screen sizes below 880px */
+@media (max-width: 880px) {
+  .pricebox {
+    display: block; /* Stack the boxes vertically */
+  }
+
+  .boxone {
+    width: calc(100% - 24px); /* Full width minus 12px on each side */
+    margin: 12px; /* To leave space of 12px on right and left */
+    height: auto;
+  }
+}

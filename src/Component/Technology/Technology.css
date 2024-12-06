@@ -1,0 +1,132 @@
+.Scrollbarone {
+    width: 100%;
+    background-image: url('../../assets/designerbg.png');
+    min-height: 55vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 100;
+}
+
+.Scrollbarone h1 {
+    /* Add styles here for your heading if needed */
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 100px;
+    margin-top: 5rem;
+    overflow: hidden;
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -300px; /* Default left for large screens */
+    }
+}
+
+.item {
+    width: 200px; /* You can adjust this value */
+    height: 150px; /* You can adjust this value */
+    background-color: #011c3a;
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 10px rgb(219, 243, 3);
+    transition: transform 0.3s ease;
+    border-radius: 4px;
+    position: absolute;
+    left: max(calc(300px * 10), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 45s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    overflow: hidden; /* Hide overflow */
+}
+
+.item img {
+    object-fit: cover; /* Cover the container */
+    width: 50%; /* Make image width 100% of the item */
+    height: 50%; /* Make image height 100% of the item */
+    display: block; /* Remove any inline spacing */
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* Adjust the animation delays */
+.item1 { animation-delay: calc(30s / 8 * (8 - 1) * -1); }
+.item2 { animation-delay: calc(30s / 8 * (8 - 2) * -1); }
+.item3 { animation-delay: calc(30s / 8 * (8 - 3) * -1); }
+.item4 { animation-delay: calc(30s / 8 * (8 - 4) * -1); }
+.item5 { animation-delay: calc(30s / 8 * (8 - 5) * -1); }
+.item6 { animation-delay: calc(30s / 8 * (8 - 6) * -1); }
+.item7 { animation-delay: calc(30s / 8 * (8 - 7) * -1); }
+.item8 { animation-delay: calc(30s / 8 * (8 - 8) * -1); }
+.item9 { animation-delay: calc(30s / 8 * (8 - 9) * -1); }
+
+
+/* Media Queries for Responsiveness */
+
+
+@media (max-width: 768px) {
+    .Scrollbarone{
+        height: 35vh;
+    }
+    .wrapper {
+        height: 35vh; /* Increased wrapper height */
+    }
+    .item {
+        width: 170px;
+        height: 130px;
+        background-color:#011c3a;
+        border: 3px solid #fff;
+        box-shadow: 0px 4px 10px rgb(219, 243, 3);
+        transition: transform 0.3s ease;
+        border-radius: 4px ;
+        position: absolute;
+        left: max(calc(200px * 13), 100%);
+        animation-name: scrollLeft;
+        animation-duration: 50s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; /* Slightly larger box height */
+    }
+    @keyframes scrollLeft {
+        to {
+            left: -150px; /* Reduced gap on medium screens */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .Scrollbarone{
+        height: 35vh;
+    }
+    .wrapper {
+        height: 90px; /* Increased wrapper height */
+    }
+    .item {
+        width: 150px;
+        height: 130px;
+        background-color:#011c3a;
+        border: 3px solid #fff;
+        box-shadow: 0px 4px 10px rgb(219, 243, 3);
+        transition: transform 0.3s ease;
+        border-radius: 4px ;
+        position: absolute;
+        left: max(calc(200px * 13), 100%);
+        animation-name: scrollLeft;
+        animation-duration: 50s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite; /* Slightly larger box height */
+    }
+
+    @keyframes scrollLeft {
+        to {
+            left: -150px; /* Reduce gap on small screens */
+        }
+    }
+}
